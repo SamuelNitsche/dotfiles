@@ -54,7 +54,7 @@ sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
 
 echo 'Install node'
 echo '-----------'
-brew install node@8
+brew install node@14
 
 echo 'Install pkg-config'
 echo '------------------'
