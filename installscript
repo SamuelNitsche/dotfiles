@@ -84,10 +84,11 @@ echo 'Install doctl'
 echo '-------------'
 brew install doctl
 
-echo 'Install brew-cask'
+echo 'Install brew casks'
 echo '-----------------'
-brew tap caskroom/cask
-brew install brew-cask
+brew tap homebrew/bundle
+brew bundle
+
 
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
