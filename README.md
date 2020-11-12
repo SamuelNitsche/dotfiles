@@ -2,7 +2,7 @@
 
 My personal dotfiles.
 
-Mostly copied from Freek van der Herten [freek.dev](http://freek.dev).
+Mostly copied from [Freek van der Herten](http://freek.dev).
 
 It contains the installation of some basic tools, some handy aliases and functions. Backups of settings are done via [Mackup](https://github.com/lra/mackup).
 
