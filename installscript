@@ -62,7 +62,7 @@ brew install pkg-config
 
 echo 'Install wget'
 echo '------------'
-brew install wget --overwrite
+brew install wget --force
 
 echo 'Install httpie'
 echo '--------------'
