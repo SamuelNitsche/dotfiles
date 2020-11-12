@@ -38,6 +38,12 @@ git checkout d6a36b1 agnoster.zsh-theme
 cd ~/.dotfiles/shell
 chmod +x z.sh
 
+echo 'Install homebrew'
+echo '----------------'
+echo install homebrew
+sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 echo 'Install composer'
 echo '----------------'
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -45,12 +51,6 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'c31c1e292ad7be5f49291
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
-
-echo 'Install homebrew'
-echo '----------------'
-echo install homebrew
-sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo 'Install node'
 echo '-----------'
@@ -96,9 +96,8 @@ brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlpret
 
 echo 'Install php'
 echo '-----------'
-brew install php@7.0
-brew install php@7.1
 brew install php@7.2
+brew install php@7.3
 brew install php@7.4
 
 echo 'Install imagemagick'
