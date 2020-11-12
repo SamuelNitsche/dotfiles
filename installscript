@@ -120,17 +120,9 @@ echo 'Install redis'
 echo '-------------'
 pecl install redis
 
-echo 'Install laravel envoy'
-echo '---------------------'
-composer global require "laravel/envoy=~1.0"
-
 echo 'Install phpunit-watcher'
 echo '-----------------------'
 composer global require spatie/phpunit-watcher
-
-echo 'Install mixed-content-scanner-cli'
-echo '---------------------------------'
-composer global require spatie/mixed-content-scanner-cli
 
 echo 'Install laravel valet'
 echo '---------------------'
