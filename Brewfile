@@ -15,6 +15,7 @@ cask 'sublime-text'
 cask 'tableplus'
 cask 'nextcloud'
 cask 'iterm2'
+cask 'visual-studio-code'
 
 # Fonts
 cask 'font-lato'
