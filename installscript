@@ -38,10 +38,6 @@ git checkout d6a36b1 agnoster.zsh-theme
 cd ~/.dotfiles/shell
 chmod +x z.sh
 
-echo 'Set macos defaults'
-echo '---------------------------'
-/bin/bash $HOME/.dotfiles/macos/set-defaults.sh
-
 echo 'Install homebrew'
 echo '----------------'
 echo install homebrew
@@ -91,11 +87,11 @@ brew install doctl
 echo 'Install brew casks'
 echo '-----------------'
 brew tap homebrew/bundle
-brew bundle
+brew bundle --file=$HOME/.dotfiles/Brewfile
 
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
-brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
+brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip webpquicklook suspicious-package
 
 echo 'Install php'
 echo '-----------'
@@ -168,3 +164,12 @@ echo '2. Make a .dotfiles-custom/shell/.aliases for your personal commands'
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
+
+echo 'Set macos defaults?'
+echo 'This will set all macos default settings. Are you sure you want to do this? (y/n) '
+read -p 'Answer: ' reply
+
+if [[ $reply =~ ^[Yy]$ ]]
+then
+  /bin/bash $HOME/.dotfiles/macos/set-defaults.sh
+fi
