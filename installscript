@@ -38,6 +38,10 @@ git checkout d6a36b1 agnoster.zsh-theme
 cd ~/.dotfiles/shell
 chmod +x z.sh
 
+echo 'Set macos defaults'
+echo '---------------------------'
+/bin/bash $HOME/.dotfiles/macos/set-defaults.sh
+
 echo 'Install homebrew'
 echo '----------------'
 echo install homebrew
@@ -127,7 +131,7 @@ composer global require spatie/phpunit-watcher
 echo 'Install laravel valet'
 echo '---------------------'
 composer global require laravel/valet
-valet install
+$HOME/.composer/vendor/bin/valet install
 
 echo 'Install mysql'
 echo '-------------'
@@ -161,8 +165,7 @@ echo '++++++++++++++++++++++++++++++'
 echo 'Some optional tidbits'
 
 echo '1. Make sure dropbox is running first. If you have not backed up via Mackup yet, then run `mackup backup` to symlink preferences for a wide collection of apps to your dropbox. If you already had a backup via mackup run `mackup restore` You'\''ll find more info on Mackup here: https://github.com/lra/mackup.'
-echo '2. Set some sensible os x defaults by running: $HOME/.dotfiles/macos/set-defaults.sh'
-echo '3. Make a .dotfiles-custom/shell/.aliases for your personal commands'
+echo '2. Make a .dotfiles-custom/shell/.aliases for your personal commands'
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
