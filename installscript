@@ -93,7 +93,6 @@ echo '-----------------'
 brew tap homebrew/bundle
 brew bundle
 
-
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
 brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
