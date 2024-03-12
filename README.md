@@ -7,7 +7,7 @@
 2. Clone the dotfiles repo
 
 ```
-git clone --recursive git@github.com:samuelnitsche/dotfiles.git ~/.dotfiles
+git clone --recursive git@github.com:SamuelNitsche/dotfiles.git ~/.dotfiles
 ```
 
 3. Setup
