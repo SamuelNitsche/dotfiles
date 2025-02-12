@@ -22,15 +22,13 @@ brew 'pngquant'
 brew 'svgo'
 brew 'gifsicle'
 
-# Development
-brew 'herd'
-
 # Apps
 cask '1password'
 cask 'arc'
 cask 'cleanshot'
 cask 'discord'
 cask 'github'
+cask 'herd'
 brew 'jetbrains-toolbox'
 cask 'tableplus'
 cask 'the-unarchiver'
