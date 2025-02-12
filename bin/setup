@@ -5,8 +5,8 @@ echo "Setting up test project..."
 REPOSITORY=$1
 DIRECTORY="./$2"
 
-if [[ $PWD != "$HOME/Herd" ]]; then
-    echo "You can only setup projects in the $HOME/Herd directory."
+if [[ $PWD != "$HOME/Dev" ]]; then
+    echo "You can only setup projects in the $HOME/Dev directory."
 
     exit 1
 fi
@@ -34,4 +34,4 @@ php artisan migrate:fresh --seed
 npm install
 npm run build
 
-open -a "/Applications/Visual Studio Code.app" "`pwd`"
+#open -a "/Applications/Visual Studio Code.app" "`pwd`"
